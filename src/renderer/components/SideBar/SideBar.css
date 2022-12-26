@@ -1,0 +1,9 @@
+.sidebar-item:hover {
+  color: hsl(var(--nf));
+  background-color: hsl(var(--nc));
+}
+
+.sidebar-active {
+  background-color: hsl(var(--p));
+  color: hsl(var(--pc))
+}
