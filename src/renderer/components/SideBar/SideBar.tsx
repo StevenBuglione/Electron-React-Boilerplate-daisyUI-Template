@@ -10,6 +10,7 @@ import {
   faInfoCircle,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
+import Logo from '../Logo/Logo';
 
 const SideBar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -20,6 +21,9 @@ const SideBar = () => {
 
   return (
     <nav className="flex flex-col h-screen">
+      <div className={`${isCollapsed ? 'hidden' : ''} w-64 p-4 space-y-4`}>
+        <Logo />
+      </div>
       <ul className={`${isCollapsed ? 'hidden' : ''} w-64 p-4 space-y-4`}>
         <li>
           <a
